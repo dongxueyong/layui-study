@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+
+
+		<script src="layui/layui.js"></script>.
+
+		<script>
+			layui.config({
+				base: "moduls/"
+			}).extend({
+				api:"api"
+			});
+			
+			layui.use(["api"],function(){
+				var aaa = layui.api;
+				aaa.login()
+			});
+		</script>
+	</body>
+</html>

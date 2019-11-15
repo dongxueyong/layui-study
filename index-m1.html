@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+
+
+		<script src="layui/layui.js"></script>.
+		<script>
+			layui.config({
+				base: 'moduls/' //自定义layui组件的目录
+			}).extend({ //设定组件别名(用来区分)
+				demo: 'demo',
+			});
+
+			layui.use(['demo'], function() {
+				var demo = layui.demo;
+				demo.login();
+			});
+		</script>
+
+	</body>
+</html>
